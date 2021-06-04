@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="chat.db">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.21">
+    <root id="1">
+      <ServerVersion>3.27.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="7" parent="2" name="t1"/>
+    <table id="8" parent="2" name="t2"/>
+    <table id="9" parent="2" name="tg"/>
+    <table id="10" parent="2" name="u1"/>
+    <table id="11" parent="2" name="u2"/>
+    <table id="12" parent="2" name="users"/>
+    <table id="13" parent="2" name="w1"/>
+    <table id="14" parent="2" name="w2"/>
+    <table id="15" parent="2" name="w3"/>
+    <column id="16" parent="6" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="17" parent="6" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="18" parent="6" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="19" parent="6" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="20" parent="6" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="21" parent="7" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="22" parent="7" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="23" parent="7" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="24" parent="8" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="25" parent="8" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="26" parent="8" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="27" parent="9" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="28" parent="9" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="29" parent="9" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="30" parent="10" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="31" parent="10" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="32" parent="10" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="33" parent="11" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="34" parent="11" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="35" parent="11" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="36" parent="12" name="email">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="37" parent="12" name="username">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="38" parent="12" name="password">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <index id="39" parent="12" name="sqlite_autoindex_users_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="12">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_users_1</UnderlyingIndexName>
+    </key>
+    <column id="41" parent="13" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="42" parent="13" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="43" parent="13" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="44" parent="14" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="45" parent="14" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="46" parent="14" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="47" parent="15" name="content">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="48" parent="15" name="sourceUsername">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="49" parent="15" name="toWho">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>
